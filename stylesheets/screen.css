@@ -1,0 +1,313 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+body{
+  background-color: #314440;
+  color: #b39563;
+  font-family: '仿宋', '黑体',Arial, sans-serif;
+  font-size: 24px;
+
+}
+
+.bt-square1{
+  width: 200px;
+  height: 50px;
+  border:#b39563 1px solid ; 
+  padding: 10px 4px;
+
+  
+}
+.bt-square2{
+  /*background-color: #b39563;*/
+  border:#b39563 1px solid ; 
+  padding: 5px 30px;
+  
+}
+
+.bt-square2 a{
+  color: #b39563;
+  text-decoration: none;
+
+}
+
+.bt-circle{
+  display: inline-block;
+  
+  width: 100px;
+  height: 100px;
+  border:#b39563 1px solid; 
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+.bt-circle label {
+  color: #b39563;
+  text-decoration: none;
+  display: block;
+  vertical-align: middle;
+  padding-top: 27px;
+}
+
+
+
+/*.img-seal{
+  width: 80px;
+  height: 80px;
+  background: url(../img/seal.png) ;
+  position: absolute;
+
+}
+*/
+
+/*-----------------*/
+.frontcover{
+  position: relative;
+  width: 100%;
+  height: 900px;
+  background: #000 url(../img/fc-bonsai1.png) ;
+  /*background: #000 url(../img/fc-bonsai1.png) center center fixed no-repeat;*/
+  
+  background-size: cover;
+}
+
+
+
+.logo{
+  display: block;
+  width: 400px;
+  height: 150px;
+  background-color: #b39563;
+  color: white;
+  position: absolute; 
+  font-weight: bold;
+  left: 35%;
+  top: 35%;
+  /*margin-left:-200px;*/
+  /*padding-top:25px;*/
+  /*margin: 0px auto;*/
+
+}
+
+.master{
+  
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.treepark{
+  text-align: center;
+  font-size: 72px;
+  letter-spacing: 10px;
+}
+
+.frame{
+  position: absolute;
+  width: 92%;
+  height: 91%;
+  margin-top: 35px;
+  margin-left: 50px;
+  border:#b39563 5px solid; 
+}
+/*.line{
+  width: 100%;
+  height: 50px;
+  background-color: #b39563;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: -10px;
+  z-index: 1;
+}*/
+.video-content{
+  margin-top: 150px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 500px;
+  background-color: #b39563;
+
+}
+.text-content{
+  position: relative;
+  padding: 0 100px 100px 100px;
+}
+.text-content h2{
+  text-align: left;
+  font-size: 36px;
+  font-weight: bold;
+  
+}
+
+.main-content2{
+  margin: 10px 0 50px 150px;
+  
+}
+
+.text-content p {
+  margin: 0 0 50px 0;
+  color: white;
+}
+
+.works{
+    position: relative;
+    width: 100%;
+    min-height:  800px;
+    padding-bottom: 100px;
+
+}
+.works label{
+  cursor: pointer;
+}
+
+.works-content{
+  position: absolute;
+  display: none;
+  margin: 50px 0;
+  padding: 25px 0;
+  width: 100%;
+  min-height:  600px;
+  background-color: #b39563;
+
+}
+#works-content1{
+  z-index: 1;
+}
+
+.works [id^="work"]:checked ~ [id^="works-content"] {
+  display: block;
+}
+
+.works input[type="radio"] {
+  display: none;
+}
+
+/*點擊後出現樣式?*/
+.works input[type=radio]:checked + label {
+  border: 1px solid #FFF;
+}
+.works .bt-square1{
+  position: absolute;
+  bottom: 0;
+  width: auto;
+  height: auto;
+}
+
+
+li{
+  display: block;
+}
+
+.img-bonsai{
+
+  float: left;
+  width: 33.33%;
+  height: 300px;
+  background-color: white;
+  position: relative;
+}
+
+.details{
+  padding-top: 10px;
+  
+}
+
+.details h2{
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  text-decoration: underline;
+  font-size: 30px;
+  
+
+}
+
+.details h4{
+  display: inline-block;
+  padding: 2px;
+  position: absolute;
+  right: 20px;
+  border:#b39563 1px solid;
+  
+}
+
+.details h3{
+  background-color: #b39563;
+  /*position: absolute;*/
+  margin-top: 50%;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  
+}
+.bt-enlarge{
+  display: inline-block;
+  position: absolute;
+  top: 110px;
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  /*background-color: rgba(255, 255, 255, 0.5); */
+  background-color: red; 
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  
+}
+
+.fa-search-plus{
+  color: #314440;
+}
+
