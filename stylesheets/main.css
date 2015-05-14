@@ -95,6 +95,17 @@ body{
   vertical-align: middle;
   padding-top: 27px;
 }
+.icon{
+   display: inline-block;
+  
+  width: 90px;
+  height: 90px;
+  border:#b39563 1px solid; 
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
 
 
 
@@ -331,20 +342,13 @@ li{
   background-color: white;
 }
 
-/*.about-master{
-  margin-left: 135px;
-  position: relative;
-  width: 80%;
-  height: 400px;
-  background-color: white;
-}
-*/
-.about-master h4{
+
+/*.about-master h4{
   display: inline-block;
   font-size: 36px;
   font-style: italic;
   border:#b39563 1px solid;
-}
+}*/
 
 .about-master h1{
   display: inline-block;
@@ -386,4 +390,65 @@ li{
   background: #000 url(../img/test.jpg) ;
   background-size: cover;
 }
+.service-items h4{
+  display: inline-block;
+  font-size: 48px;
+  border:#b39563 1px solid;
+}
 
+.service-content{
+  
+  margin: 100px auto 10px;
+  max-width: 90%;
+
+  min-height:  600px;
+
+}
+
+
+.service-detail{
+  float: left;
+  min-width: 33.333%;
+  min-height:  300px;
+
+  text-align: center;
+}
+
+
+.service-detail h3{
+
+  
+  text-decoration: underline;
+  font-weight: bold;
+
+}
+
+.service-detail p{
+  font-size: 18px;
+  color: white;
+}
+
+.map{
+  margin: 50px 0 150px 0;
+}
+
+footer{
+  width: 100%;
+  height: 75px;
+  background-color: #b39563;
+  color: white;
+  font-family: '黑体', '仿宋',Arial, sans-serif;
+  font-size: 18px;
+}
+
+.facebook{
+  color: #b39563;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
