@@ -12,8 +12,10 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
 		<!-- Javascript -->
+
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/lightbox.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript">
 
 			function show(){
@@ -29,6 +31,19 @@
 			}
 			
 		</script>
+		<!-- google-map -->
+		<style type="text/css">
+            #map {
+                width: 100%;
+                height: 400px;
+                margin: 50px 0 150px 0;
+            }
+        </style>
+        
+        <script src="js/googlemap.js"></script>
+        
+        
+
 	</head>
 	<body>
 		
@@ -182,7 +197,7 @@
 			                
                             <div class="about-master">
                             	<!-- <h4>關於</h4> -->
-                            	<h1>董文吉<h5>:</h5></h1>
+                            	<h1> 董文吉 <h5></h5></h1>
                             	
                             	<p>伊豆高原櫻花隧道、箱根 <br>、小田原址公園、清水公園、<br>長靜櫻並木、八瀨川之櫻並木、<br>河口湖..等。櫻花由含苞至全開大約十天</p>
                             	<div class="down-triangle"></div>
@@ -199,7 +214,7 @@
 			                            
 			                <div class="about-master">
                             	<!-- <h4>關於</h4> -->
-                            	<h1>名巨樹園<h5>:</h5></h1>
+                            	<h1>名巨樹園<h5></h5></h1>
                             	
                             	<p>伊豆高原櫻花隧道、箱根 <br>、小田原址公園、清水公園、<br>長靜櫻並木、八瀨川之櫻並木、<br>河口湖..等。櫻花由含苞至全開大約十天</p>
                             	<div class="down-triangle"></div>
@@ -280,13 +295,18 @@
 				<span class="bt-square2"><a href="#">聯絡我們</a></span>
 			</span>
 			<h2>屏東縣恆春鎮恆南路88號</h2>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.452467452072!2d120.74506978022187!3d21.993967674133568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b0c4b6488035%3A0x69dc7277f58e25c5!2zOTQ25bGP5p2x57ij5oGG5pil6Y6u5oGG5Y2X6LevODjomZ8!5e0!3m2!1szh-TW!2stw!4v1431572675105" width="100%" height="400" frameborder="0" style="border:0" class="map"></iframe>
+			<div id="map"></div>
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.452467452072!2d120.74506978022187!3d21.993967674133568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b0c4b6488035%3A0x69dc7277f58e25c5!2zOTQ25bGP5p2x57ij5oGG5pil6Y6u5oGG5Y2X6LevODjomZ8!5e0!3m2!1szh-TW!2stw!4v1431572675105" width="100%" height="400" frameborder="0" style="border:0" class="map"></iframe> -->
 		</section>
 		
 		<footer>
 			<span>© 2015·<a href="https://www.facebook.com/wenchi88" >董文吉的名巨樹園</a>·cckoyo173@gmail.com</span>
 
-			<a href="https://www.facebook.com/wenchi88" class="facebook"><i class="fa fa-facebook fa-lg"></i></a>
+			<span class="fa-stack fa-lg">
+			  <i class="fa fa-circle fa-stack-2x"></i>
+			  <a href="https://www.facebook.com/wenchi88" class="facebook"><i class="fa fa-facebook fa-stack-1x "></i></a>
+			</span>
+			
 		</footer>
 		
 

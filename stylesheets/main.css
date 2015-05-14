@@ -340,23 +340,18 @@ li{
   width: 100%;
   height: 400px;
   background-color: white;
+
 }
-
-
-/*.about-master h4{
-  display: inline-block;
-  font-size: 36px;
-  font-style: italic;
-  border:#b39563 1px solid;
-}*/
 
 .about-master h1{
   display: inline-block;
   font-size: 48px;
   border:#b39563 1px solid;
+  margin: 10px 0 10px 15%;
 }
 .about-master p{
   float: left;
+  text-align: center;
 }
 .down-triangle{
   width: 0;   
@@ -428,27 +423,32 @@ li{
   color: white;
 }
 
-.map{
-  margin: 50px 0 150px 0;
-}
 
+.contact h2{
+  margin-top: 100px;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
 footer{
-  width: 100%;
-  height: 75px;
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  padding: 28.5px 0 28.5px 28.5px;
   background-color: #b39563;
   color: white;
   font-family: '黑体', '仿宋',Arial, sans-serif;
   font-size: 18px;
+  text-align: left;
 }
 
 .facebook{
+  position: absolute;
+  right: 30px;
   color: #b39563;
   display: inline-block;
-  width: 50px;
-  height: 50px;
-  background-color: white;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
+
+ 
+ 
   text-align: center;
 }
