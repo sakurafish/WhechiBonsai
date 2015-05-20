@@ -4,7 +4,8 @@
 		<title>董文吉名巨樹園</title>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8">
 		<link href="stylesheets/screen.css" media="all" rel="stylesheet">
-	  	<link href="stylesheets/main.css" media="all" rel="stylesheet" >
+	  	<link href="stylesheets/main.css" media="all"rel="stylesheet">
+
 		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 		
 		<!-- CSS -->
@@ -15,22 +16,41 @@
 
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/lightbox.min.js"></script>
+
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="http://sassiholford.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
 		<script type="text/javascript">
 
-			function show(){
-				document.getElementById("detail").style.display = "block"; 
-			}
-			function hide(){
-				document.getElementById("detail").style.display = "none"; 
-			}
-
-			function tree(){
-				document.getElementById("tree2").innerHTML="關於董文吉";
+			$(document).ready(function () {
 				
-			}
+				$(".img-bonsai").bind("mouseover, mouseenter", function () {
+
+					$(this).find(".details").slideDown(100);
+
+				}).bind("mouseout, mouseleave", function () {
+					
+					$(this).find(".details").slideUp(100);
+
+
+				});
+				$("#tree2").bind("show, hide", function () {
+
+					document.getElementById("tree2").innerHTML="關於董文吉";
+
+				}).bind("show, hide", function () {
+					
+					document.getElementById("tree2").innerHTML="關於名巨樹園";
+
+				});
+
+
+			});
+
+
 			
+
 		</script>
+
 		<!-- google-map -->
 		<style type="text/css">
             #map {
@@ -41,12 +61,13 @@
         </style>
         
         <script src="js/googlemap.js"></script>
-        
-        
+
+
+       
 
 	</head>
 	<body>
-		
+
 <!-- 封面 -->
 		<header class="frontcover">
 			<div class="frame">
@@ -57,7 +78,8 @@
 			</span>
 		</header>
 
-		<div class="line"></div>
+		<!-- <div class="line"></div> -->
+		
 		<section class="video-content">
 			<!-- <video controls="controls"  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" >
 			  
@@ -74,27 +96,34 @@
 			<div class="img-seal"></div>
 			<p>伊豆高原櫻花隧道、箱根 、小田原址公園、清水公園、長靜櫻並木、八瀨川之櫻並木、河口湖..等。
 			櫻花由含苞至全開大約十天，而日本人最愛在三分開至八分開的期間舉行花見大會、櫻花祭、花見船、泡湯賞櫻、尋訪古都之櫻等春遊活動，在花下吟歌嘻戲。</p>
+			<a href="#" class="bt-square">
+				<span class="bt-square1">
+					<span class="bt-square2">作品欣賞</span>
+				</span>
+			</a>
 			
-			<span class="bt-square1">
-				<span class="bt-square2"><a href="#">作品欣賞</a></span>
-			</span>
 			
 		</section>
 		
 		<section class="works">
-			<span class="bt-square1">
-				<span class="bt-square2"><a href="#">更多作品</a></span>
-			</span>
+			
+
+			<a href="#" class="bt-square">
+				<span class="bt-square1">
+					<span class="bt-square2">更多作品</span>
+				</span>
+			</a>
 			<input type="radio" name="work" id="work1" checked />
 			<span class="bt-circle"><label for="work1">歷年<br>作品</label></span>
 			<ul class="works-content" id="works-content1">
 				<li>
-					<div class="img-bonsai" onmouseover="show()" onmouseleave="hide()">
+					<div class="img-bonsai">
 						<!-- 滑鼠移過出現 -->
-						<div class="details"  style="display: none;" id="detail">
+						<div class="details"  style="display: none;" >
 							<h2>壽娘子</h2>
 							<h4>2012</h4>
-							<span class="bt-enlarge"><a href="img/test.jpg" data-lightbox="roadtrip" data-title="My caption"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+
+							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
 
 
@@ -104,55 +133,70 @@
 				<li>
 					<div class="img-bonsai">
 						<!-- 滑鼠移過出現 -->
-						<div class="details">
+						<div class="details"  style="display: none;">
 							<h2>壽娘子</h2>
 							<h4>2012</h4>
-							<span class="bt-enlarge"><a href="img/test2.jpg" data-lightbox="roadtrip" data-title="My caption"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+
+							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
+
+
 						</div>
 					</div>
 				</li>
 				<li>
 					<div class="img-bonsai">
 						<!-- 滑鼠移過出現 -->
-						<div class="details">
+						<div class="details"  style="display: none;" >
 							<h2>壽娘子</h2>
 							<h4>2012</h4>
-							<span class="bt-enlarge"><a href="#"></a></span>
+
+							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
+
+
 						</div>
 					</div>
 				</li>
 				<li>
 					<div class="img-bonsai">
 						<!-- 滑鼠移過出現 -->
-						<div class="details">
+						<div class="details"  style="display: none;" >
 							<h2>壽娘子</h2>
 							<h4>2012</h4>
-							<span class="bt-enlarge"><a href="#"></a></span>
+
+							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
+
+
 						</div>
 					</div>
 				</li>
 				<li>
 					<div class="img-bonsai">
 						<!-- 滑鼠移過出現 -->
-						<div class="details">
+						<div class="details"  style="display: none;" >
 							<h2>壽娘子</h2>
 							<h4>2012</h4>
-							<span class="bt-enlarge"><a href="#"></a></span>
+
+							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
+
+
 						</div>
 					</div>
 				</li>
 				<li>
 					<div class="img-bonsai">
 						<!-- 滑鼠移過出現 -->
-						<div class="details">
+						<div class="details"  style="display: none;" >
 							<h2>壽娘子</h2>
 							<h4>2012</h4>
-							<span class="bt-enlarge"><a href="#"></a></span>
+
+							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
+
+
 						</div>
 					</div>
 				</li>
@@ -177,7 +221,7 @@
 				</li>
 			</ul>
 
-			
+			<div class="hr">|</div>
 			
 		</section>
 
@@ -241,9 +285,13 @@
 			</div><!-- /.row --> 
 			</div><!-- /.container -->
 
-			<span class="bt-square1">
-				<span class="bt-square2"><a href="#myCarousel" data-slide="next" id="tree2" onclick="tree()">關於名巨樹園</a></span>
-			</span>
+			
+			<a href="#myCarousel" data-slide="next"  onclick="tree()">
+				<span class="bt-square1">
+					<span class="bt-square2" id="tree2">關於名巨樹園</span>
+				</span>
+			</a>
+
 			<!-- 點擊bt出現 -->
 			<!-- <div class="about-treepark">
 				<h4>關於</h4>
@@ -257,29 +305,29 @@
 			<ul class="service-content">
 				<li class="service-detail">
 					<div class="sss">
-						<span class="icon"></span>
+						<span class="icon1"></span>
 						<h3>成品</h3>
 						<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 					</div>
 					
 				</li>
 				<li class="service-detail">
-					<span class="icon"></span>
+					<span class="icon2"></span>
 					<h3>半成品</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
 				<li class="service-detail">
-					<span class="icon"></span>
+					<span class="icon3"></span>
 					<h3>素材</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
 				<li class="service-detail">
-					<span class="icon"></span>
+					<span class="icon4"></span>
 					<h3>代種</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
 				<li class="service-detail">
-					<span class="icon"></span>
+					<span class="icon5"></span>
 					<h3>洽談</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
@@ -291,11 +339,16 @@
 		</section>
 
 		<section class="contact">
-			<span class="bt-square1">
-				<span class="bt-square2"><a href="#">聯絡我們</a></span>
-			</span>
+
+			<a href="#" class="bt-square">
+				<span class="bt-square1">
+					<span class="bt-square2">聯絡我們</span>
+				</span>
+			</a>
+
 			<h2>屏東縣恆春鎮恆南路88號</h2>
 			<div id="map"></div>
+
 			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.452467452072!2d120.74506978022187!3d21.993967674133568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b0c4b6488035%3A0x69dc7277f58e25c5!2zOTQ25bGP5p2x57ij5oGG5pil6Y6u5oGG5Y2X6LevODjomZ8!5e0!3m2!1szh-TW!2stw!4v1431572675105" width="100%" height="400" frameborder="0" style="border:0" class="map"></iframe> -->
 		</section>
 		
@@ -311,6 +364,8 @@
 		
 
 
+		
+		
 		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
 		<script>

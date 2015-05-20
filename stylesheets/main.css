@@ -53,33 +53,51 @@ body{
   color: #b39563;
   font-family: '仿宋', '黑体',Arial, sans-serif;
   font-size: 24px;
+  cursor: default;
+}
+
+
+.bt-square:nth-child(1){
+  position: relative;
+  right: 400px;
+
 
 }
 
+.bt-square{
+  display: block;
+  color: #b39563;
+  text-decoration: none;
+}
+
 .bt-square1{
+  position: relative;
+  left: 74%;
   width: 200px;
   height: 50px;
   border:#b39563 1px solid ; 
   padding: 10px 4px;
-
-  
 }
 .bt-square2{
-  /*background-color: #b39563;*/
   border:#b39563 1px solid ; 
   padding: 5px 30px;
-  
 }
 
-.bt-square2 a{
-  color: #b39563;
-  text-decoration: none;
-
+.bt-square2:hover{
+  background-color: #b39563;
+  color: white;
 }
 
+
+
+.bt-circle:nth-child(even){
+  position: relative;
+  left: 50%;
+}
 .bt-circle{
+  position: relative;
+  left: 33%;
   display: inline-block;
-  
   width: 100px;
   height: 100px;
   border:#b39563 1px solid; 
@@ -88,26 +106,52 @@ body{
   border-radius: 50px;
   text-align: center;
 }
+
 .bt-circle label {
-  color: #b39563;
   text-decoration: none;
   display: block;
   vertical-align: middle;
   padding-top: 27px;
 }
-.icon{
-   display: inline-block;
-  
+
+.bt-circle:hover{
+  background-color: #b39563;
+}
+label:hover{
+  color: white;
+
+}
+.icon1{
+  background:  url(../img/icon1.png) ;
+  background-size: cover;
+}
+.icon2{
+  background:  url(../img/icon2.png) ;
+  background-size: cover;
+}
+
+.icon3{
+  background:  url(../img/icon3.png) ;
+  background-size: cover;
+}
+.icon4{
+  background:  url(../img/icon4.png) ;
+  background-size: cover;
+}
+.icon5{
+  background:  url(../img/icon5.png) ;
+  background-size: cover;
+}
+[class*="icon"]{
+  display: inline-block;
   width: 90px;
   height: 90px;
-  border:#b39563 1px solid; 
+  border:white 1px solid; 
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
   text-align: center;
 }
-
-
 
 /*.img-seal{
   width: 80px;
@@ -195,6 +239,7 @@ body{
 
 }
 .text-content{
+
   position: relative;
   padding: 0 100px 100px 100px;
 }
@@ -221,6 +266,12 @@ body{
     min-height:  800px;
     padding-bottom: 100px;
 
+}
+.hr{
+margin-top: -80px;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 300;
 }
 .works label{
   cursor: pointer;
@@ -249,23 +300,27 @@ body{
 }
 
 /*點擊後出現樣式?*/
-.works input[type=radio]:checked + label {
-  border: 1px solid #FFF;
+.works input[type=radio]:checked + .bt-circle {
+  background-color: #b39563;
+  color: white;
 }
+
 .works .bt-square1{
   position: absolute;
-  bottom: 0;
+  top: 850px;
   width: auto;
   height: auto;
 }
-
+.fa-search-plus{
+  position: absolute;
+  margin: 18px 0 0 15px;
+}
 
 li{
   display: block;
 }
 
-.img-bonsai{
-
+[class*="img-bonsai"]{
   float: left;
   width: 33.33%;
   height: 300px;
@@ -273,6 +328,10 @@ li{
   position: relative;
 }
 
+.img-bonsai{
+  background: #000 url(../img/fc-bonsai1.png) ;
+  background-size: cover;
+}
 .details{
   padding-top: 10px;
   
@@ -311,10 +370,9 @@ li{
   position: absolute;
   top: 110px;
   left: 40%;
-  width: 80px;
-  height: 80px;
-  /*background-color: rgba(255, 255, 255, 0.5); */
-  background-color: red; 
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5); 
   -webkit-border-radius: 25px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -326,13 +384,17 @@ li{
 }
 
 .about-content{
-  margin: 100px 0;
+  margin: 200px 0 100px; 0;
+
   
 }
 .about-content h4{
+  margin-left: 44.5%;
+  padding: 5px 30px;
   display: inline-block;
   font-size: 48px;
   border:#b39563 1px solid;
+
 
 }
 .about-master{
@@ -385,17 +447,19 @@ li{
   background: #000 url(../img/test.jpg) ;
   background-size: cover;
 }
+.service-items{
+  text-align: center;
+}
 .service-items h4{
+  padding: 5px 30px;
   display: inline-block;
   font-size: 48px;
   border:#b39563 1px solid;
 }
 
 .service-content{
-  
   margin: 100px auto 10px;
   max-width: 90%;
-
   min-height:  600px;
 
 }
@@ -412,7 +476,7 @@ li{
 
 .service-detail h3{
 
-  
+  margin: 20px 0;
   text-decoration: underline;
   font-weight: bold;
 
@@ -423,7 +487,14 @@ li{
   color: white;
 }
 
+.service-detail:nth-child(n+4){
+  position: relative;
+  left: 210px;
+}
+.service-detail:nth-child(5){
+  /*border:#b39563 1px solid; */
 
+}
 .contact h2{
   margin-top: 100px;
   font-style: italic;
@@ -441,7 +512,9 @@ footer{
   font-size: 18px;
   text-align: left;
 }
-
+footer a{
+  color: white;
+}
 .facebook{
   position: absolute;
   right: 30px;
