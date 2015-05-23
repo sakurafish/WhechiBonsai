@@ -3,6 +3,7 @@
   	<head>
 		<title>董文吉名巨樹園</title>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		 <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<link href="stylesheets/screen.css" media="all" rel="stylesheet">
 	  	<link href="stylesheets/main.css" media="all"rel="stylesheet">
 
@@ -13,43 +14,13 @@
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		
 		<!-- Javascript -->
-
+		
 		<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 		<script src="js/lightbox.min.js"></script>
 
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="http://sassiholford.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1"></script>
-		<script type="text/javascript">
 
-			$(document).ready(function () {
-				
-				$(".img-bonsai").bind("mouseover, mouseenter", function () {
-
-					$(this).find(".details").slideDown(100);
-
-				}).bind("mouseout, mouseleave", function () {
-					
-					$(this).find(".details").slideUp(100);
-
-
-				});
-				$("#tree2").bind("show, hide", function () {
-
-					document.getElementById("tree2").innerHTML="關於董文吉";
-
-				}).bind("show, hide", function () {
-					
-					document.getElementById("tree2").innerHTML="關於名巨樹園";
-
-				});
-
-
-			});
-
-
-			
-
-		</script>
 
 		<!-- google-map -->
 		<style type="text/css">
@@ -61,13 +32,15 @@
         </style>
         
         <script src="js/googlemap.js"></script>
+		
 
-
-       
 
 	</head>
 	<body>
+	
 
+
+       
 <!-- 封面 -->
 		<header class="frontcover">
 			<div class="frame">
@@ -76,11 +49,22 @@
 				<h1 class="master">董文吉</h1>
 				<h1 class="treepark">名巨樹園</h1>
 			</span>
+			
 		</header>
-
-		<!-- <div class="line"></div> -->
 		
+
+
+		
+	<div class="wrapper">
+		<span class="logo2 ">
+			<a  onclick="location.href='tel:0929542677'">
+				<h1 class="b">董文吉</h1>
+				<h1 class="bb">名巨樹園</h1>
+			</a>
+			
+		</span>
 		<section class="video-content">
+			<div class="line"></div>
 			<!-- <video controls="controls"  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" >
 			  
 			<source src="//demosthenes.info/assets/videos/polina.webm" type="video/webm">
@@ -96,34 +80,35 @@
 			<div class="img-seal"></div>
 			<p>伊豆高原櫻花隧道、箱根 、小田原址公園、清水公園、長靜櫻並木、八瀨川之櫻並木、河口湖..等。
 			櫻花由含苞至全開大約十天，而日本人最愛在三分開至八分開的期間舉行花見大會、櫻花祭、花見船、泡湯賞櫻、尋訪古都之櫻等春遊活動，在花下吟歌嘻戲。</p>
-			<a href="#" class="bt-square">
+			<a href="#a" class="bt-square" >
 				<span class="bt-square1">
 					<span class="bt-square2">作品欣賞</span>
 				</span>
 			</a>
 			
-			
+
 		</section>
-		
-		<section class="works">
+
+		 
+		<section class="works" >
 			
 
-			<a href="#" class="bt-square">
+			<a href="https://wen-chi.exposure.co/" target="_blank" class="bt-square" id="a">
 				<span class="bt-square1">
 					<span class="bt-square2">更多作品</span>
 				</span>
 			</a>
 			<input type="radio" name="work" id="work1" checked />
-			<span class="bt-circle"><label for="work1">歷年<br>作品</label></span>
+			<span class="bt-circle"><label for="work1">近期<br>作品</label></span>
 			<ul class="works-content" id="works-content1">
 				<li>
-					<div class="img-bonsai">
+					<div class="img-bonsai1">
 						<!-- 滑鼠移過出現 -->
 						<div class="details"  style="display: none;" >
 							<h2>壽娘子</h2>
-							<h4>2012</h4>
+							<h4>2015</h4>
 
-							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+							<span class="bt-enlarge"><a href="img/works1-newB.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
 
 
@@ -131,13 +116,13 @@
 					</div>
 				</li>
 				<li>
-					<div class="img-bonsai">
+					<div class="img-bonsai2">
 						<!-- 滑鼠移過出現 -->
 						<div class="details"  style="display: none;">
-							<h2>壽娘子</h2>
-							<h4>2012</h4>
+							<h2>象牙樹</h2>
+							<h4>2015</h4>
 
-							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+							<span class="bt-enlarge"><a href="img/works2-newB.jpeg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
 
 
@@ -145,13 +130,13 @@
 					</div>
 				</li>
 				<li>
-					<div class="img-bonsai">
+					<div class="img-bonsai3">
 						<!-- 滑鼠移過出現 -->
 						<div class="details"  style="display: none;" >
-							<h2>壽娘子</h2>
-							<h4>2012</h4>
+							<h2>八角櫻桃</h2>
+							<h4>2015</h4>
 
-							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+							<span class="bt-enlarge"><a href="img/works3-newB.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
 
 
@@ -159,13 +144,13 @@
 					</div>
 				</li>
 				<li>
-					<div class="img-bonsai">
+					<div class="img-bonsai4">
 						<!-- 滑鼠移過出現 -->
 						<div class="details"  style="display: none;" >
-							<h2>壽娘子</h2>
-							<h4>2012</h4>
+							<h2>七里香</h2>
+							<h4>2015</h4>
 
-							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+							<span class="bt-enlarge"><a href="img/works4-newB.jpeg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
 
 
@@ -173,13 +158,13 @@
 					</div>
 				</li>
 				<li>
-					<div class="img-bonsai">
+					<div class="img-bonsai5">
 						<!-- 滑鼠移過出現 -->
 						<div class="details"  style="display: none;" >
-							<h2>壽娘子</h2>
-							<h4>2012</h4>
+							<h2>山柑</h2>
+							<h4>2014</h4>
 
-							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+							<span class="bt-enlarge"><a href="img/works5-newB.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
 
 
@@ -187,13 +172,13 @@
 					</div>
 				</li>
 				<li>
-					<div class="img-bonsai">
+					<div class="img-bonsai6">
 						<!-- 滑鼠移過出現 -->
 						<div class="details"  style="display: none;" >
-							<h2>壽娘子</h2>
-							<h4>2012</h4>
+							<h2>七里香</h2>
+							<h4>2014</h4>
 
-							<span class="bt-enlarge"><a href="img/works1.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
+							<span class="bt-enlarge"><a href="img/works6-newB.jpg" data-lightbox="roadtrip" data-title="壽娘子"><i class="fa fa-search-plus fa-lg" ></i></a></span>
 							<h3>逸品獎、國際評審特別獎、上選獎</h3>
 
 
@@ -204,7 +189,7 @@
 			</ul>
 
 			<input type="radio" name="work" id="work2" />
-			<span class="bt-circle"><label for="work2">近期<br>作品</label></span>
+			<span class="bt-circle"><label for="work2">歷年<br>作品</label></span>
 			<ul class="works-content" id="works-content2">
 				<li>
 					<div class="img-bonsai">
@@ -305,29 +290,29 @@
 			<ul class="service-content">
 				<li class="service-detail">
 					<div class="sss">
-						<span class="icon1"></span>
+						<span class="icon1" title="Created by Fernando Rodríguez from the Noun Project"></span>
 						<h3>成品</h3>
 						<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 					</div>
 					
 				</li>
 				<li class="service-detail">
-					<span class="icon2"></span>
+					<span class="icon2" title="Created by M from the Noun Project"></span>
 					<h3>半成品</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
 				<li class="service-detail">
-					<span class="icon3"></span>
+					<span class="icon3" title="Created by  Anton Gajdosik from the Noun Project"></span>
 					<h3>素材</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
 				<li class="service-detail">
-					<span class="icon4"></span>
+					<span class="icon4" title="Created by Ji Sub Jeong from the Noun Project"></span>
 					<h3>代種</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
 				<li class="service-detail">
-					<span class="icon5"></span>
+					<span class="icon5" title="Created by misirlou from the Noun Project"></span>
 					<h3>洽談</h3>
 					<p>款式多樣、尺寸齊全、提供修改調整服務。</p>
 				</li>
@@ -340,9 +325,11 @@
 
 		<section class="contact">
 
-			<a href="#" class="bt-square">
+			<a  class="bt-square" style="cursor: pointer;">
 				<span class="bt-square1">
-					<span class="bt-square2">聯絡我們</span>
+					<span class="bt-square2" onclick="location.href='tel:0929542677'">聯絡我們</span>
+					
+    
 				</span>
 			</a>
 
@@ -351,13 +338,14 @@
 
 			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3699.452467452072!2d120.74506978022187!3d21.993967674133568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3471b0c4b6488035%3A0x69dc7277f58e25c5!2zOTQ25bGP5p2x57ij5oGG5pil6Y6u5oGG5Y2X6LevODjomZ8!5e0!3m2!1szh-TW!2stw!4v1431572675105" width="100%" height="400" frameborder="0" style="border:0" class="map"></iframe> -->
 		</section>
-		
+		<div class="line2"></div>
 		<footer>
-			<span>© 2015·<a href="https://www.facebook.com/wenchi88" >董文吉的名巨樹園</a>·cckoyo173@gmail.com</span>
+			
+			<span class="foot">© 2015·<a href="https://www.facebook.com/wenchi88" target="_blank">董文吉名巨樹園</a>·cckoyo173@gmail.com</span>
 
 			<span class="fa-stack fa-lg">
 			  <i class="fa fa-circle fa-stack-2x"></i>
-			  <a href="https://www.facebook.com/wenchi88" class="facebook"><i class="fa fa-facebook fa-stack-1x "></i></a>
+			  <a href="https://www.facebook.com/wenchi88" class="facebook" target="_blank"><i class="fa fa-facebook fa-stack-1x "></i></a>
 			</span>
 			
 		</footer>
@@ -372,9 +360,13 @@
 		$(document).ready(function () {
 		    $('.carousel').carousel({ interval: 6000 });
 		});
-		//@ sourceURL=pen.js
+
 		</script>
 		<script src="/assets/editor/live/css_live_reload_init.js"></script>
+  		
+
+  		<script src="js/main.js"></script>
+  	</div>
   	</body>
 
 </html>
