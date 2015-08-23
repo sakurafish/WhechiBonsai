@@ -24,3 +24,11 @@
 		    }
 		});	
 
+
+					function ab(){
+
+		 				$(".text-content2").toggle("slow");
+		 				
+		 				
+		 				document.getElementById("about-treepark2").style.display = "none";
+					}

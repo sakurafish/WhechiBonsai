@@ -23,10 +23,6 @@
   color: white;
 }
 
-/*.bt-square:visited
-        {
-            color: white;
-        }*/
 .bt-square-center{
   margin-top: -150px;
 }
@@ -143,17 +139,6 @@ h4{
 
 }
 /*video-content*/
-.video-content{
-  position: relative;
-  padding-top: 7%;
-	background-color: #314440;
-}
-
-.story-video{
-  background-color: #b39563;
-  height: 500px;
-}
-
 .line{
   position: absolute;
   top: -10px;
@@ -169,6 +154,19 @@ h4{
   z-index: auto;
 }
 
+.video-content{
+  position: relative;
+  padding-top: 7%;
+	background-color: #314440;
+}
+
+.story-video{
+  background-color: #b39563;
+  height: 100%;
+}
+
+
+/*text-content*/
 .text-content h2{
   margin-top: 50px;
   font-weight: bold;
@@ -184,7 +182,7 @@ h4{
     padding: 0; 
 }
 
-
+/*works*/
 [class*="works-img"]{
   position: relative;
 }
@@ -290,64 +288,14 @@ margin-top: -80px;
   background: #000 url(../img/works1.jpg) ;
   background-size: cover;
 }
-.details{
-  display: block;
-  padding-top: 10px;
-  
-}
 
-.details h2{
-  display: inline-block;
-  position: absolute;
-  left: 20px;
-  text-decoration: underline;
-  font-size: 30px;
-  color: white;
 
-}
-
-.details h4{
-  display: inline-block;
-  padding: 2px;
-  position: absolute;
-  right: 20px;
-  border:white 1px solid;
-  color: white;
-}
-
-.details h3{
-  background-color: #b39563;
-  /*position: absolute;*/
-  margin-top: 50%;
-  padding: 20.5px;
-  color: white;
-  text-align: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  
-}
-.bt-enlarge{
-  display: inline-block;
-  position: absolute;
-  top: 110px;
-  left: 40%;
-  width: 60px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.5); 
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  
-}
-
-.fa-search-plus{
-  color: #314440;
-}
-
+/*about-treepark/master*/
 .about-treepark{
   display: block;
   margin-top: 25px; 
 }
-
+/*service-items*/
 .service-items{
   margin: 200px 0 100px 0; 
   text-align: center;
@@ -396,6 +344,7 @@ margin-top: -80px;
   text-align: center;
 }
 
+/*map/contact*/
 .contact{
   margin-bottom: 25px;
   text-align: center;
@@ -419,6 +368,7 @@ margin-top: -80px;
   border-bottom-left-radius: 10px;
   z-index: 100;
 }
+/*footer*/
 footer{
   position: relative;
   max-width: 100%;
